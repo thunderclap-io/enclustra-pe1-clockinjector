@@ -19,7 +19,7 @@ U 1 1 5C9072DF
 P 2400 2850
 F 0 "J1" H 2450 3967 50  0000 C CNN
 F 1 "Conn_02x20_Odd_Even" H 2450 3876 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x20_P2.54mm_Vertical_SMD" H 2400 2850 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Vertical_SMD" H 2400 2850 50  0001 C CNN
 F 3 "~" H 2400 2850 50  0001 C CNN
 	1    2400 2850
 	1    0    0    -1  
@@ -173,10 +173,6 @@ I2C_EN_IOB
 Text Label 1750 3850 0    50   ~ 0
 I2C_INT#
 Wire Wire Line
-	5300 4350 5200 4350
-Wire Wire Line
-	5000 4450 5300 4450
-Wire Wire Line
 	5200 4350 5200 5200
 $Comp
 L power:GND #PWR0103
@@ -191,8 +187,6 @@ F 3 "" H 5200 5200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1750 3850 1750 3950
-Wire Wire Line
-	1750 3950 5300 3950
 $Comp
 L Device:R_Small R1
 U 1 1 5C90F0A6
@@ -342,14 +336,6 @@ Wire Wire Line
 Wire Wire Line
 	2700 3850 4400 3850
 Wire Wire Line
-	4400 4150 4400 3850
-Wire Wire Line
-	4400 4150 5300 4150
-Wire Wire Line
-	4300 4250 4300 3750
-Wire Wire Line
-	4300 4250 5300 4250
-Wire Wire Line
 	2700 3750 4300 3750
 Wire Wire Line
 	3850 3650 3850 4200
@@ -359,8 +345,6 @@ Wire Wire Line
 Connection ~ 3850 4500
 Wire Wire Line
 	4800 4500 4800 4050
-Wire Wire Line
-	4800 4050 5300 4050
 Wire Wire Line
 	3850 4500 4800 4500
 Wire Wire Line
@@ -379,4 +363,42 @@ F 3 "" H 5500 6350 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5500 5900 5500 6350
+Wire Wire Line
+	4400 4150 5300 4150
+Wire Wire Line
+	4300 4250 5300 4250
+Wire Wire Line
+	5300 4350 5200 4350
+Wire Wire Line
+	5000 4450 5300 4450
+Wire Wire Line
+	4800 4050 5300 4050
+Wire Wire Line
+	1750 3950 5300 3950
+Wire Wire Line
+	4300 4250 4300 3750
+Wire Wire Line
+	4400 4150 4400 3850
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5C98D0B7
+P 7150 2900
+F 0 "H1" H 7250 2946 50  0000 L CNN
+F 1 "MountingHole" H 7250 2855 50  0000 L CNN
+F 2 "Fiducial:Fiducial_1mm_Dia_2.54mm_Outer_CopperBottom" H 7150 2900 50  0001 C CNN
+F 3 "~" H 7150 2900 50  0001 C CNN
+	1    7150 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5C98D1BB
+P 7150 3250
+F 0 "H2" H 7250 3296 50  0000 L CNN
+F 1 "MountingHole" H 7250 3205 50  0000 L CNN
+F 2 "Fiducial:Fiducial_1mm_Dia_2.54mm_Outer_CopperBottom" H 7150 3250 50  0001 C CNN
+F 3 "~" H 7150 3250 50  0001 C CNN
+	1    7150 3250
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
